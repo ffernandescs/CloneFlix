@@ -1,0 +1,498 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+
+h1, h2, h3, h4, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: #000;
+    
+}
+
+.containerNav{
+    width: 100%;
+    height: 69vh;
+    border-bottom: 9px solid #222222;
+    position: relative;
+    
+}
+
+.imgBanner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.colorEfect {
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 30px 40px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    z-index: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.text .enter {
+    width: 55px;
+    background-color: #E50914;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+    font-size: 14px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.text #selecao {
+    background-color: transparent;
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.text:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0ac";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight:900;
+    font-size: 15px;
+    color: #eee;
+    position: relative;
+    left: 24px;
+ }
+
+.text option {
+    font-size: 16px;
+    background-color: rgb(101, 100, 100);
+}
+
+.infInitial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+.textInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.textInfo h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.textInfo h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.textInfo p {
+    font-size: 20px;
+}
+
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.searchBtn input {
+    width: 450px;
+    padding: 22px;
+    border-radius: 2px;
+    border: none;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.searchBtn button {
+    width: 170px;
+    padding: 17px;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    background-color: #F40612;
+    color: #eee;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.searchBtn button:hover {
+    background-color: #d8000b;
+}
+
+.cont1, .cont3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont2, .cont4 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.cont1, .cont2, .cont3, .cont4 {
+    color: #eee;
+    padding: 40px;
+    border-bottom: 9px solid #222222;    
+}
+
+.textcont1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    color: #eee;
+}
+
+.textcont1 h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.textcont1 p {
+    color: #eee;
+    font-size: 25px;
+}
+
+.fundoVideo {
+    position: relative;
+    width: 400px;
+}
+
+.fundoVideo img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.videoSource {
+    width: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.videoSource video {
+    width: 100%;
+    position: absolute;
+    top: 290px;
+    left: 55px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mobileShot {
+    position: absolute;
+    border: 3px solid #333;
+    border-radius: 13px;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 80px;
+    top: 170px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #000;
+}
+
+.mobileShot img {
+    width: 40px;
+}
+
+.textShot {
+    width: 130px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.mobileShot::after {
+    position: absolute;
+    right: 0;
+    width: 3em;
+    height: 3em;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    content: '';
+}
+
+.textShot p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.textShot a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #2d2de4;
+}
+
+.fundoVideo2 {
+    position: relative;
+    width: 450px;
+}
+
+.fundoVideo2 img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.videoSource2 {
+    width: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.videoSource2 video {
+    width: 100%;
+    position: absolute;
+    top: 240px;
+    left: 75px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #eee;
+    padding: 80px 0 30px 0;
+    border-bottom: 9px solid #222222;    
+
+}
+
+section h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.faqList {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.faqListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 7px;
+
+}
+
+.faqListItem button {
+    width: 100%;
+    height: 70px;
+    background-color: #303030;
+    border: none;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.faqListItem button span {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.faqAswer {
+    margin-top: 1px;
+    width: 100%;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqAswer span {
+    font-size: 25px;
+    text-align: start;
+    padding: 30px;
+}
+
+
+
+.emailBtn {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.searchBtn2 {
+    width: 80%;
+    height: 70px;
+
+    position: relative;
+}
+
+.searchBtn2 input {
+    padding: 25px;
+    height: 70px;
+    border-radius: 2px;
+    border: none;
+    outline: 0;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.searchBtn2 input, .searchBtn2 label {
+    width: 100%;
+
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.searchBtn2 label {
+    transition-duration: 0.2s;
+    left: 15px;
+    top: 25px;
+    color: rgb(91, 91, 91);
+}
+
+.searchBtn2 input:focus + label {
+    padding-top: 5px;
+    top: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.btnEmail {
+    width: 30%;
+}
+
+.btnEmail button {
+    width: 100%;
+    height: 70px;
+    border-radius: 2px;
+    border: none;
+    font-size: 16px;
+    background-color: #F40612;
+    color: #eee;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 1px;
+}
+
+.btnEmail button:hover {
+    background-color: #d8000b;
+}
+
+.textInfo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 50px 0 20px 0;
+}
+
+.textInfo2 p {
+    font-size: 20px;
+}
