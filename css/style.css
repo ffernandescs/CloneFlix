@@ -14,6 +14,10 @@ h1, h2, h3, h4, p, button {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #000;
     
@@ -21,7 +25,7 @@ h1, h2, h3, h4, p, button {
 
 .containerNav{
     width: 100%;
-    height: 69vh;
+    height: 95vh;
     border-bottom: 9px solid #222222;
     position: relative;
     
@@ -57,7 +61,7 @@ h1, h2, h3, h4, p, button {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    padding: 30px 40px;
+    padding: 25px 55px;
     box-sizing: border-box;
 
 }
@@ -69,7 +73,7 @@ h1, h2, h3, h4, p, button {
 }
 
 .logo img {
-    width: 140px;
+    width: 165px;
     z-index: 0;
 }
 
@@ -95,8 +99,8 @@ h1, h2, h3, h4, p, button {
 
 .text #selecao {
     background-color: transparent;
-    width: 120px;
-    padding: 10px;
+    width: 117px;
+    padding: 8px;
     border: 1px solid #aaa;
     color: #fff;
     font-size: 14px;
@@ -118,7 +122,7 @@ h1, h2, h3, h4, p, button {
  }
 
 .text option {
-    font-size: 16px;
+    font-size: 14px;
     background-color: rgb(101, 100, 100);
 }
 
@@ -142,15 +146,18 @@ h1, h2, h3, h4, p, button {
     align-items: center;
     justify-content: center;
     color: #fff;
+    width: 85containerNav0px;
+    text-align: center;
+    margin-top: 60px;
 }
 
 .textInfo h1 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 15px;
 }
 
 .textInfo h3 {
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 35px;
 }
 
@@ -167,8 +174,8 @@ h1, h2, h3, h4, p, button {
 }
 
 .searchBtn input {
-    width: 450px;
-    padding: 22px;
+    width: 600px;
+    padding: 20px;
     border-radius: 2px;
     border: none;
     outline: 0;
@@ -176,8 +183,8 @@ h1, h2, h3, h4, p, button {
     font-size: 16px;
 }
 .searchBtn button {
-    width: 170px;
-    padding: 17px;
+    width: 250px;
+    padding: 16px;
     border-radius: 2px;
     border: none;
     font-size: 16px;
@@ -192,32 +199,47 @@ h1, h2, h3, h4, p, button {
     background-color: #d8000b;
 }
 
-.cont1, .cont3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.cont2, .cont4 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
 
 .cont1, .cont2, .cont3, .cont4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #eee;
-    padding: 40px;
-    border-bottom: 9px solid #222222;    
+    padding: 40px 0;
+    border-bottom: 9px solid #222222;  
+    width: 100%;
+    height: 400px;
+  
+}
+
+.contBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.revrs {
+    flex-direction: row-reverse;
+}
+
+.imgCont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 100px;
+    position: relative;
+    left: -150px;
 }
 
 .textcont1 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
     text-align: start;
     color: #eee;
+    width: 500px;
 }
 
 .textcont1 h1 {
@@ -227,12 +249,15 @@ h1, h2, h3, h4, p, button {
 
 .textcont1 p {
     color: #eee;
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 2rem;
 }
 
-.fundoVideo {
+.fundoVideo, .fundoVideo2 {
     position: relative;
-    width: 400px;
+    width: 550px;
+    padding-left: 70px;
+
 }
 
 .fundoVideo img {
@@ -242,7 +267,7 @@ h1, h2, h3, h4, p, button {
 }
 
 .videoSource {
-    width: 290px;
+    width: 400px;
     position: absolute;
     top: 0;
     left: 0;
@@ -251,8 +276,8 @@ h1, h2, h3, h4, p, button {
 .videoSource video {
     width: 100%;
     position: absolute;
-    top: 290px;
-    left: 55px;
+    top: 400px;
+    left: 145px;
     bottom: 0;
     right: 0;
     margin: auto;
@@ -262,15 +287,11 @@ h1, h2, h3, h4, p, button {
     position: absolute;
     border: 3px solid #333;
     border-radius: 13px;
-    top: 0;
     right: 0;
-    width: 270px;
+    width: 300px;
     height: 80px;
-    top: 170px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    bottom: 35px;
+    left: 180px;
     z-index: 6;
     display: flex;
     justify-content: flex-start;
@@ -316,7 +337,7 @@ h1, h2, h3, h4, p, button {
 
 .fundoVideo2 {
     position: relative;
-    width: 450px;
+    
 }
 
 .fundoVideo2 img {
@@ -327,18 +348,15 @@ h1, h2, h3, h4, p, button {
 
 .videoSource2 {
     width: 280px;
-    position: absolute;
     top: 0;
     left: 0;
 }
 
 .videoSource2 video {
-    width: 100%;
+    width: 340px;
     position: absolute;
-    top: 240px;
-    left: 75px;
-    bottom: 0;
-    right: 0;
+    bottom: 180px;
+    right: 110px;
     margin: auto;
 }
 
@@ -360,7 +378,7 @@ section h1 {
 }
 
 .faqList {
-    width: 70%;
+    max-width: 815px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -370,6 +388,7 @@ section h1 {
 }
 
 .faqListItem {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -401,12 +420,24 @@ section h1 {
 }
 
 .faqAswer {
-    margin-top: 1px;
+    margin-top: 2px;
     width: 100%;
+    max-height: 0;
     background-color: #303030;
     display: flex;
+    z-index: -555;
     justify-content: center;
     align-items: center;
+    transition: all 0.15s;
+}
+
+.faqAswerHilden {
+    z-index: 2;
+    max-height: 500px;
+
+
+
+
 }
 
 .faqAswer span {
@@ -415,10 +446,8 @@ section h1 {
     padding: 30px;
 }
 
-
-
 .emailBtn {
-    width: 70%;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +455,7 @@ section h1 {
 }
 
 .searchBtn2 {
-    width: 80%;
+    width: 500px;
     height: 70px;
 
     position: relative;
@@ -464,7 +493,7 @@ section h1 {
 }
 
 .btnEmail {
-    width: 30%;
+    width: 200px;
 }
 
 .btnEmail button {
@@ -495,4 +524,107 @@ section h1 {
 
 .textInfo2 p {
     font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+
+.contFooter {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 200px 0 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.contFooter h1 {
+    color:#757575 ;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.infoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.foot1 a {
+    list-style: none;
+    text-transform: none;
+    text-decoration: none;
+    color:#757575 ;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.contFooter p {
+    font-size: 12px;
+    color:#757575 ;
+}
+
+.text2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.text2 #selecao2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+    width: 170px;
+    height: 60px;
+    border: 1px solid #999999;
+    box-shadow: 5px 2px 1px rgba(51, 51, 51, 0.5);
+    color: #999999;
+    font-size: 14px;
+    padding-left: 60px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.text2:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0ac";
+    padding-right: 3px;
+    font-weight:900;
+    font-size: 15px;
+    color: #999999;
+    left: 20px;
+    position: absolute;
+ }
+
+.text2 option {
+    font-size: 18px;
+    background-color: rgb(101, 100, 100);
 }
